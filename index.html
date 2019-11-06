@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse ">
+        <div class="container-fluid ">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">SalesApp</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            
+            <ul class="nav navbar-nav">
+              <li ><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Admin</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+          <h2>Codezoomers-Sale App</h2>
+          <p>This App is design to Asist codezoomers in their Daily Record Keeping....</p>
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#home">Revenue</a></li>
+            <li><a data-toggle="pill" href="#menu1">Expenses</a></li>
+            <li><a data-toggle="pill" href="#menu2">Reports</a></li>
+            <li><a data-toggle="pill" href="#menu3">Inventory</a></li>
+          </ul>
+          
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>Revenue</h3>
+              <form>
+              
+              <div class="form-group col-md-4">
+                  <label for="sel1">Sales catagory</label>
+              <select class="form-control" id="ball">
+                  <option>Select</option>
+                <option value="Graphics Design">Graphics Design</option>
+                <option value="Photo-copy">Photo-copy</option>
+                <option value="ID Card">ID Card</option>
+                <option value="DI print">DI print</option>
+                <option value="DOC. Editing">DOC. Editing</option>
+                <option value="Flex">Flex</option>
+                <option value="Binding">Binding</option>
+                <option value="Internet Service">Internet Service</option>
+                <option value="On;line. Reg">Online. Reg</option>
+                <option value="Laminate">Laminate</option>
+                <option value="Typing">Typing</option>
+                <option value="Scanning">Scanning</option>
+                <option value="Jotter">Jotter</option>
+                <option value="SAv">SAV</option>
+                <option value="LOGO">LOGO</option>
+              </select>
+              </div>
+
+              <div class="form-group col-md-4">
+              <label for="Amt">Amount</label>
+              <input type="number" class="form-control" id="amt">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="sel1">Mode of Payment</label>
+                <select class="form-control" id="sell">
+                    <option>Select</option>
+                  <option value="Bank Transaction">Bank Transaction</option>
+                  <option value="PayPal">PayPal</option>
+                  <option value="POS">POS</option>
+                  <option value="Vissa">Vissa</option>
+                  <option value="cash">cash</option>
+                </select>
+              
+              </div>
+            </form>
+
+
+       
+        <div class=" form-group col-md-8">
+        <label for="comment">Description</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="pay()";>Submit</button>
+   
+  </div>
+      <div id="menu1" class="tab-pane fade">
+              <h3>Expenses</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <h3>Reports</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+              <h3>Inventory</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="table-responsive man">          
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Catagory</th>
+                    <th>Amount</th>
+                    <th>Mode of Payment</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td id="CAP"></td>
+                    <td id="amount"></td>
+                    <td id="MOP"></td>
+                    <td id="dist"></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+      <script src="jquery\dist\jquery.min.js" ></script>
+      <script src="bootstrap\dist\js\bootstrap.min.js" ></script>
+<script src="main.js">
+
+</script>
+</body>
+</html>
